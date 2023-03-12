@@ -5,8 +5,7 @@
     http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="testBean" class="ru.maxima.spring.TestBean">
-        <constructor-arg value="Nataliya" />
+    <bean id="music" class="ru.maxima.spring.player.ClassicalMusic">
     </bean>
 
     </beans>

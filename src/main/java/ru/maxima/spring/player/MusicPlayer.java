@@ -1,13 +1,13 @@
 package ru.maxima.spring.player;
 
-public class MusicPlayer {
-    public ClassicalMusic classicalMusic;
-    public RockMusic rockMusic;
+import java.util.List;
 
+public class MusicPlayer {
+    private Music music;
+    public MusicPlayer (Music music) {
+        this.music = music;
+    }
     public void play(){
-        classicalMusic = new ClassicalMusic();
-        rockMusic = new RockMusic();
-        System.out.println("Now playing " + rockMusic.getSong());
-        System.out.println("Now playing " + classicalMusic.getSong());
+        System.out.println("Now playing " + music.getSong());
     }
 }

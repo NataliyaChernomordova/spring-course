@@ -1,6 +1,7 @@
 package ru.maxima.spring.player;
 
-public class ClassicalMusic {
+public class ClassicalMusic implements Music {
+    @Override
     public String getSong(){
         return "Moon Sanata";
     }
